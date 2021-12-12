@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContCentral</title>
+
+
+<body>
+
+  <div id="header">
+    <ul class="nav">
+        <li><a href="FormRegistro.html">Registro</a></li>
+        <li><a href="Roles.html">Roles</a></li>
+        <li><a href="Protocolo.html">Protocolos</a>
+        <li><a href="Prevencion.html">Prevención</a></li>
+    </ul>
+</div>    
+
+      <div class=cajom><img src=img_1.jpg width="100%" height="97%">
+
+        
+
+
+        <div class="tabla">
+    
+            <div class="tab">
+                <input type="radio" id="tab-1" name="tab-group-1" checked>
+                <label for="tab-1">Juan Jutinico</label>
+                
+                <div class="content">
+                    <p>Juan Pablo Jutinico Gallego</p>
+                    <p>Ingeniero de software</p>
+                    <p>Email: jjutinic@ibero.edu.co</p>
+                    <p>cel: 3106667305</p>
+                    
+                      <img src="jp.jpg" width="250px" height="240px">
+                </div> 
+            </div>
+
+            
+            <div class="tab">
+                <input type="radio" id="tab-2" name="tab-group-1">
+                <label for="tab-2">Rubiel Alzate</label>
+                
+                <div class="content">
+                    <p>Rubiel Alexander Alzate</p>
+                    <p>Ingeniero de software</p>
+                    <p>Email: ralzateh@ibero.edu.co</p>
+                    <p>cel: 3103944916</p>
+                    
+                      <img src="rubiel.jpg" width="250px" height="240px">
+                </div> 
+            </div>
+            
+            <div class="tab">
+                <input type="radio" id="tab-3" name="tab-group-1">
+                <label for="tab-3">Ingrid Rojas</label>
+                
+                <div class="content">
+                    <p>Ingrid Vanesa Rojas</p>
+                    <p>Ingeniera de software</p>
+                    <p>Email: irojasp@ibero.edu.co</p>
+                    <p>cel: 3182263221</p>
+                    
+                      <img src="vanesa.jpg" width="220px" height="300px">
+                </div> 
+            </div>
+            
+        </div>
+        
+        <style type="text/css">
+        
+        .tabla {
+            position: relative;   
+            height: 600px;
+            clear: both;
+            margin: 25px 0;
+        }
+        .tab {
+            float: left;
+        }
+        .tab label {
+            background: rgb(0, 0, 0); 
+            padding: 10px; 
+            border: 3px solid rgb(5, 100, 129); 
+            margin-left: -1px; 
+            position: relative;
+            left: 40px; 
+        }
+        .tab [type=radio] {
+            display: none;   
+        }
+        .content {
+            position: absolute;
+            top: 38px;
+            left: 0;
+            background: rgb(0, 0, 0);
+            right: 0;
+            bottom: 0;
+            padding: 5px;
+            border: 4px solid rgb(5, 100, 129); 
+            overflow: hidden;
+        }
+        
+        [type=radio]:checked ~ label {
+            background: rgb(5, 100, 129);
+            border-bottom: 1px solid rgb(0, 0, 0);
+            z-index: 2;
+        }
+
+        [type=radio]:checked ~ label ~ .content {
+            z-index: 1;
+        }
+        
+        
+
+    h1{
+      font-size: 60px;
+      color: blanchedalmond;
+    }
+
+    .v{
+      font-size: 20px;
+      color:#bbdefb ;
+    }
+
+#header {
+            margin:auto;
+            width:500px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        ul, ol {
+            list-style:none;
+        }
+        
+        .nav > li {
+            float:left;
+        }
+        
+        .nav li a {
+            background-color:rgb(5, 100, 129);
+            color:#bbdefb;
+            text-decoration:none;
+            padding:10px 12px;
+            display:block;
+        }
+        
+        .nav li a:hover {
+            background-color:#212121;
+        }
+        
+        .nav li ul {
+            display:none;
+            position:absolute;
+            min-width:140px;
+        }
+        
+        .nav li:hover > ul {
+            display:block;
+        }
+        
+        .nav li ul li {
+            position:relative;
+        }
+        
+        .nav li ul li ul {
+            right:-140px;
+            top:0px;
+        }
+
+
+body{
+      background-color: black;
+    }
+
+    .cajom{
+      background: black;
+      position: absolute ;
+      left: 60PX;
+      top:  100PX;
+      border: 13px double black;
+      box-shadow: 3px 5px 35px 2px rgb(5, 100, 129);
+      width: 920px;
+      height: 600px;
+      font-size: 30px;
+      font-family: "castellar";
+      text-align: center;
+      color: #dfeefb;
+      
+    }
+
+  
+   </style>
+
+</body>
+
+</html>
